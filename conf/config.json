@@ -1,0 +1,6 @@
+{
+    "service_name": "ares.script.w2b_price_update",
+    "env": "dev",
+    "port": "9880",
+    "log_level": "Debug"
+}
