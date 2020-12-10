@@ -49,7 +49,7 @@ func HandleMessage() {
 	offset := 0
 	limit := 10
 	conf.InitPlatformDBConnect()
-	conf.DataPlatformDB.Model(&model.W2bProducts{}).Where("id > 1").Count(&count)
+	conf.DataPlatformDB.Model(&model.W2bProducts{}).Where("on_sale = 1").Count(&count)
 	logs.Info("[HandleMessage] total item num: %v", count)
 
 	f, err := os.Create(path + "/" + filename) //创建文件
@@ -63,7 +63,7 @@ func HandleMessage() {
 	tpl := "\"%v\",\"%v\",\"%v\"\n"
 	for i := 0; i < count/limit; i++ {
 		w2bProducts := []model.W2bProducts{}
-		conf.DataPlatformDB.Where("on_sale=1").Offset(offset).Limit(limit).Find(&w2bProducts)
+		conf.DataPlatformDB.Where("on_sale = 1").Offset(offset).Limit(limit).Find(&w2bProducts)
 		offset += limit
 
 		for _, item := range w2bProducts {
