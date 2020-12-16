@@ -37,7 +37,7 @@ func HandleMessage() {
 
 	for _, fileItem := range fileInfoList {
 		logs.Info("[HandleMessage] current file list: %v", fileItem.Name()) //打印当前文件或目录下的文件或目录名
-		if strings.Contains(fileItem.Name(), "america"+filename) {
+		if strings.Contains(fileItem.Name(), "america-"+filename) {
 			logs.Info("[HandleMessage] current filename is exist, dirFilename: %v, filename %v", fileItem.Name(), filename) //打印当前文件或目录下的文件或目录名
 			fmt.Printf("[HandleMessage]file exist! ====")
 			time.Sleep(1800 * time.Second)
@@ -64,11 +64,11 @@ type GenerateFileParam struct {
 
 func GeneratePriceFile(param GenerateFileParam) {
 	offset := 0
-	limit := 10
+	limit := 2000
 	conf.InitPlatformDBConnect()
 	condition := "on_sale = 1"
 	if param.IsCanada {
-		condition = condition + "and to_canada = 1"
+		condition = condition + " and to_canada = 1"
 	}
 	//conf.DataPlatformDB.Model(&model.W2bProducts{}).Where().Count(&count)
 	//logs.Info("[HandleMessage] total item num: %v", count)
@@ -83,9 +83,9 @@ func GeneratePriceFile(param GenerateFileParam) {
 		totalW2bProducts = append(totalW2bProducts, w2bProducts...)
 	}
 
-	filename := "america" + param.FileName
+	filename := "america-" + param.FileName
 	if param.IsCanada {
-		filename = "canada" + param.FileName
+		filename = "canada-" + param.FileName
 	}
 	f, err := os.Create(param.FilePath + "/" + filename) //创建文件
 	defer f.Close()
