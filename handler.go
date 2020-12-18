@@ -100,6 +100,9 @@ func GeneratePriceFile(param GenerateFileParam) {
 	for _, item := range totalW2bProducts {
 		sku := "x-w2b-" + item.W2bID
 		price := item.Price + item.ShipCost + item.Supplierhandling
+		if item.Stricted == 0 {
+			item.Quantity = 0
+		}
 		quantity := item.Quantity
 
 		money := 1.5 * float64(price) / 100
