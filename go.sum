@@ -79,6 +79,8 @@ github.com/windrainw/bs_common v0.0.0-20201210161313-6d3d15f52904 h1:OeYXBGbFkIg
 github.com/windrainw/bs_common v0.0.0-20201210161313-6d3d15f52904/go.mod h1:kCIV3kpWfmy8WJ1c6VnN5BK1OkI6mYPfILLSTZSQlUY=
 github.com/windrainw/bs_common v0.0.0-20201216114539-9aa8975acdd5 h1:bLEdp0spd8L+zdoRJgHBeqE7s+QPo787NoBceMJMrjM=
 github.com/windrainw/bs_common v0.0.0-20201216114539-9aa8975acdd5/go.mod h1:+zDqiCV5SICgAhYk4aok13ZRxZU1SLxcVWoTc2aNq4E=
+github.com/windrainw/bs_common v0.0.0-20201219084744-ae22ebfb0e20 h1:K+6F7L5K13Sa8bpLrddJe4u1FIqNiZSIPzlvLEcIpec=
+github.com/windrainw/bs_common v0.0.0-20201219084744-ae22ebfb0e20/go.mod h1:+zDqiCV5SICgAhYk4aok13ZRxZU1SLxcVWoTc2aNq4E=
 github.com/windrainw/bs_common/model/data_platform_model v0.0.0-20201126124229-65f3690124c9 h1:N6ORllk85Iw7Yf/sJ1akUCENeDWRlKKFUoTAeyKTY0g=
 github.com/windrainw/bs_common/model/data_platform_model v0.0.0-20201126124229-65f3690124c9/go.mod h1:rsl+M/Fou5jYzCQv48wgLrbjinVnMJ4hoynO5pScK2s=
 github.com/windrainw/bs_common/model/data_platform_model v0.0.0-20201127090758-a50ab969182e h1:q1w4MbJ/YP79QNytvVaDwDEy4gKjIOZ1bRY7vHzjzT8=

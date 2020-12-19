@@ -101,6 +101,7 @@ func GeneratePriceFile(param GenerateFileParam) {
 		sku := "x-w2b-" + item.W2bID
 		price := item.Price + item.ShipCost + item.Supplierhandling
 		if item.Stricted == 1 {
+			// logs.Info("[] ==== w2b_id: %v, stricted: %v", item.W2bID, item.Stricted)
 			item.Quantity = 0
 		}
 		quantity := item.Quantity
