@@ -111,6 +111,11 @@ func GeneratePriceFile(param GenerateFileParam) {
 			money = 2 * float64(price) / 100
 		}
 
+		// ad white list
+		if item.W2bID == "C507170182" {
+			money = 79.99
+		}
+
 		if param.IsCanada {
 			money = money * 1.4 // 1 USD = 1.4 CAD
 		}
@@ -120,6 +125,7 @@ func GeneratePriceFile(param GenerateFileParam) {
 		} else {
 			money = floor + 0.49
 		}
+
 		str := fmt.Sprintf(tpl, sku, money, quantity)
 		logs.Info("[HandleMessage] str: %v", str)
 		f.Write([]byte(fmt.Sprintf(str)))
