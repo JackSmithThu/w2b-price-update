@@ -107,7 +107,7 @@ func GeneratePriceFile(param GenerateFileParam) {
 		quantity := item.Quantity
 
 		money := 1.5 * float64(price) / 100
-		if quantity < 2 {
+		if quantity < 0 {
 			money = 2 * float64(price) / 100
 		}
 
