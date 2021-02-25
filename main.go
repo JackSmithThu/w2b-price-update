@@ -1,11 +1,11 @@
 package main
 
 import (
-	"github.com/windrainw/bs_common/conf"
-	"github.com/windrainw/common-ares/frame/config"
-	"github.com/windrainw/common-ares/frame/daemon"
-	"github.com/windrainw/common-ares/frame/daemon/bootstrap"
-	"github.com/windrainw/common-ares/frame/logs"
+	"github.com/JackSmithThu/bs_common/conf"
+	"github.com/JackSmithThu/common-ares/frame/config"
+	"github.com/JackSmithThu/common-ares/frame/daemon"
+	"github.com/JackSmithThu/common-ares/frame/daemon/bootstrap"
+	"github.com/JackSmithThu/common-ares/frame/logs"
 )
 
 var (
@@ -25,5 +25,6 @@ func main() {
 }
 
 func Init(config *config.BaseConfig) {
-	conf.InitDBConnect()
+	// conf.InitDBConnect()
+    conf.InitPlatformDBConnect()
 }

@@ -8,9 +8,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/windrainw/bs_common/conf"
-	model "github.com/windrainw/bs_common/model/data_platform_model"
-	"github.com/windrainw/common-ares/frame/logs"
+	"github.com/JackSmithThu/bs_common/conf"
+	model "github.com/JackSmithThu/bs_common/model/data_platform_model"
+	"github.com/JackSmithThu/common-ares/frame/logs"
 )
 
 func HandleMessage() {
@@ -128,6 +128,10 @@ func GeneratePriceFile(param GenerateFileParam) {
 
 		str := fmt.Sprintf(tpl, sku, money, quantity)
 		logs.Info("[HandleMessage] str: %v", str)
+		f.Write([]byte(fmt.Sprintf(str)))
+        str = fmt.Sprintf(tpl, "c-w2b-" + item.W2bID, money - 10, quantity)
+		f.Write([]byte(fmt.Sprintf(str)))
+        str = fmt.Sprintf(tpl, "p-w2b-" + item.W2bID, money - 10, quantity)
 		f.Write([]byte(fmt.Sprintf(str)))
 	}
 
