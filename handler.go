@@ -131,7 +131,7 @@ func GeneratePriceFile(param GenerateFileParam) {
 		f.Write([]byte(fmt.Sprintf(str)))
         str = fmt.Sprintf(tpl, "c-w2b-" + item.W2bID, money - 10, quantity)
 		f.Write([]byte(fmt.Sprintf(str)))
-        str = fmt.Sprintf(tpl, "p-w2b-" + item.W2bID, money - 10, quantity)
+        str = fmt.Sprintf(tpl, "p-w2b-" + item.W2bID, money, quantity)
 		f.Write([]byte(fmt.Sprintf(str)))
 	}
 
