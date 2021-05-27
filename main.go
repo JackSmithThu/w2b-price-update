@@ -26,5 +26,5 @@ func main() {
 
 func Init(config *config.BaseConfig) {
 	// conf.InitDBConnect()
-    conf.InitPlatformDBConnect()
+	conf.InitPlatformDBConnect()
 }
