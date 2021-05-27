@@ -1,5 +1,13 @@
 github.com/JackSmithThu/bs_common v0.0.0-20210225141047-e817be197e56 h1:Lbe9Ql1GobfPPCbxS95mbGIWsXm8nPaTkrkzFVoJllE=
 github.com/JackSmithThu/bs_common v0.0.0-20210225141047-e817be197e56/go.mod h1:wmLtqrP1OLozMCv06XIr9z2YZ8ApfOc4WthbnbnjWjU=
+github.com/JackSmithThu/bs_common v0.0.0-20210403081832-15571d67ac83 h1:itvRWHlg+ndmDsrDDwIrBsz0xxBGj2Z3rISuHIKBwMA=
+github.com/JackSmithThu/bs_common v0.0.0-20210403081832-15571d67ac83/go.mod h1:wmLtqrP1OLozMCv06XIr9z2YZ8ApfOc4WthbnbnjWjU=
+github.com/JackSmithThu/bs_common v0.0.0-20210403082917-c236f9ad9248 h1:646MU1Hw8jQr3ELt+vHpU8GSv04tVjyeMveAzJSJaiA=
+github.com/JackSmithThu/bs_common v0.0.0-20210403082917-c236f9ad9248/go.mod h1:wmLtqrP1OLozMCv06XIr9z2YZ8ApfOc4WthbnbnjWjU=
+github.com/JackSmithThu/bs_common v0.0.0-20210403124557-08652962dfbe h1:TC3hxXbjGq/x5LXBHjvqDcwJ4KdQ9K3EQ5LOVKb7S1Y=
+github.com/JackSmithThu/bs_common v0.0.0-20210403124557-08652962dfbe/go.mod h1:wmLtqrP1OLozMCv06XIr9z2YZ8ApfOc4WthbnbnjWjU=
+github.com/JackSmithThu/bs_common v0.0.0-20210405075443-bfa1b898fa98 h1:NaV5AEnIzyhZ4mz3v6id6liH4JxnFZhocqS7YfIlgNg=
+github.com/JackSmithThu/bs_common v0.0.0-20210405075443-bfa1b898fa98/go.mod h1:wmLtqrP1OLozMCv06XIr9z2YZ8ApfOc4WthbnbnjWjU=
 github.com/JackSmithThu/common-ares v0.0.0-20210225134743-059ee4730e8a h1:SM6khpRFauS3h3bTNDwkkX9KN4ZIpr8VqipYei7iZzI=
 github.com/JackSmithThu/common-ares v0.0.0-20210225134743-059ee4730e8a/go.mod h1:+42J5olpp6wGwVF7hDPDb3ehfuMrxOhBXowWvKzHeMc=
 github.com/PuerkitoBio/goquery v1.5.1/go.mod h1:GsLWisAFVj4WgDibEWF4pvYnkVQBpKBKeU+7zCJoLcc=
