@@ -52,8 +52,8 @@ func HandleMessage() {
 	}
 	GeneratePriceFile(param)
 
-	param.IsCanada = true
-	GeneratePriceFile(param)
+	// param.IsCanada = true
+	// GeneratePriceFile(param)
 }
 
 type GenerateFileParam struct {
@@ -66,6 +66,7 @@ func GeneratePriceFile(param GenerateFileParam) {
 	offset := 0
 	limit := 2000
 	conf.InitPlatformDBConnect()
+    defer conf.DataPlatformDB.Close()
 	condition := "on_sale = 1"
 	if param.IsCanada {
 		condition = condition + " and to_canada = 1"
